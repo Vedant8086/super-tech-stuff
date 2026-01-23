@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Print Greeting
         run: echo "Hello Your Workflow is Executing!!!"
-      
+      - name: Printing Githib Logs
+        run: echo "${{ toJson(github)}}"
       - name: Print Bye
         run: echo "Workflow is Ended!!"
+        
